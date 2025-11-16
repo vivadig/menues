@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús - Almacén Paulina Cocina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 30px;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: #ff6b6b;
+        }
+
+        .menu-card h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-card .week-number {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .menu-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .menu-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu-link:hover {
+            background: linear-gradient(135deg, #5a67d8, #6b46a8);
+            transform: scale(1.02);
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            
+            .menu-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🍽️ Menús Semanales</h1>
+            <p>Almacén Paulina Cocina</p>
+        </header>
+
+        <main class="menu-grid">
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">1</span>
+                    Menú Semana 1
+                </h3>
+                <p>Descubre deliciosas recetas y opciones gastronómicas para la primera semana.</p>
+                <a href="menu_1.html" class="menu-link">Ver Menú Semana 1</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">2</span>
+                    Menú Semana 2
+                </h3>
+                <p>Continúa tu aventura culinaria con nuevas propuestas para la segunda semana.</p>
+                <a href="menu_2.html" class="menu-link">Ver Menú Semana 2</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">3</span>
+                    Menú Semana 3
+                </h3>
+                <p>Explora sabores únicos y recetas especiales para la tercera semana.</p>
+                <a href="menu_3.html" class="menu-link">Ver Menú Semana 3</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">4</span>
+                    Menú Semana 4
+                </h3>
+                <p>Disfruta de una selección variada de platos para la cuarta semana.</p>
+                <a href="menu_4.html" class="menu-link">Ver Menú Semana 4</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">5</span>
+                    Menú Semana 5
+                </h3>
+                <p>Saborea nuevas experiencias gastronómicas en la quinta semana.</p>
+                <a href="menu_5.html" class="menu-link">Ver Menú Semana 5</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">6</span>
+                    Menú Semana 6
+                </h3>
+                <p>Descubre combinaciones perfectas para la sexta semana del mes.</p>
+                <a href="menu_6.html" class="menu-link">Ver Menú Semana 6</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">7</span>
+                    Menú Semana 7
+                </h3>
+                <p>Continúa explorando sabores excepcionales en la séptima semana.</p>
+                <a href="menu_7.html" class="menu-link">Ver Menú Semana 7</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">8</span>
+                    Menú Semana 8
+                </h3>
+                <p>Deléitate con propuestas culinarias innovadoras para la octava semana.</p>
+                <a href="menu_8.html" class="menu-link">Ver Menú Semana 8</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">9</span>
+                    Menú Semana 9
+                </h3>
+                <p>Experimenta con nuevos sabores y texturas en la novena semana.</p>
+                <a href="menu_9.html" class="menu-link">Ver Menú Semana 9</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">10</span>
+                    Menú Semana 10
+                </h3>
+                <p>Celebra la décima semana con recetas especiales y memorables.</p>
+                <a href="menu_10.html" class="menu-link">Ver Menú Semana 10</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">11</span>
+                    Menú Semana 11
+                </h3>
+                <p>Disfruta de una cuidada selección para la undécima semana.</p>
+                <a href="menu_11.html" class="menu-link">Ver Menú Semana 11</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">12</span>
+                    Menú Semana 12
+                </h3>
+                <p>Descubre propuestas gastronómicas únicas para la duodécima semana.</p>
+                <a href="menu_12.html" class="menu-link">Ver Menú Semana 12</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">13</span>
+                    Menú Semana 13
+                </h3>
+                <p>Explora sabores extraordinarios en la décima tercera semana.</p>
+                <a href="menu_13.html" class="menu-link">Ver Menú Semana 13</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>
+                    <span class="week-number">14</span>
+                    Menú Semana 14
+                </h3>
+                <p>Culmina tu experiencia culinaria con el menú de la décima cuarta semana.</p>
+                <a href="menu_14.html" class="menu-link">Ver Menú Semana 14</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p><strong>Almacén Paulina Cocina</strong></p>
+            <p>Menús semanales para inspirar tu cocina</p>
+            <p>© 2024 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
